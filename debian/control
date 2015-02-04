@@ -1,0 +1,20 @@
+Source: jira-python
+Section: python
+Priority: optional
+Maintainer: Maintainer: Tomasz Sarnowski <sarnowskitomek@gmail.com>
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               python-all (>= 2.6.6-3~),
+               python-setuptools
+Standards-Version: 3.9.5
+X-Python-Version: >= 2.6
+Homepage: https://bitbucket.org/bspeakmon/jira-python
+
+Package: python-jira
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}
+Description: Use the JIRA REST API from Python applications.
+ JIRA is a proprietary issue tracking product, developed by Atlassian,
+ used for bug tracking, issue tracking and project management.
+ .
+ This is the python module to access the REST API.
